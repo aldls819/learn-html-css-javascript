@@ -1,0 +1,27 @@
+div {
+  font-size: 20px;
+  background-color: #ddd;
+}
+
+/*
+반응형 CSS 기본 틀
+@media 기기유형 연산자 (조건) {
+    ....
+} */
+
+/*너비가 1024px 이하일 때 적용되도록 설정한 반응형 CSS*/
+@media all and (max-width: 1024px) {
+  div {
+    font-size: 30px;
+    background-color: blueviolet;
+  }
+}
+
+/*768px 이상 ~ 1024px 이하인 구간에서
+적용되는 반응형 CSS */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  div {
+    font-size: 50px;
+    background-color: blue;
+  }
+}

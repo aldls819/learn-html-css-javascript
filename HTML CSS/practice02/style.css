@@ -1,0 +1,34 @@
+.wrapper {
+  display: grid;
+
+  grid-template-rows: repeat(3, 100px);
+
+  /*3행 3열의 배열로 원하는 위치를 지정*/
+  grid-template-areas:
+    "header slider slider"
+    "header content content"
+    "header footer banner";
+
+  gap: 16px;
+}
+
+/* 자식 요소들에 해당 부분이 어디인지 지정*/
+.content1 {
+  grid-area: header;
+}
+
+.content2 {
+  grid-area: slider;
+}
+
+.content3 {
+  grid-area: content;
+}
+
+.content4 {
+  grid-area: banner;
+}
+
+.content5 {
+  grid-area: footer;
+}
