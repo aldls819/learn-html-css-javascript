@@ -17,6 +17,8 @@ const person = {
   },
 };
 
+//얕은 복사 예시 코드
+
 //assign을 이용한 얕은 복사
 const jina = Object.assign({}, person);
 
